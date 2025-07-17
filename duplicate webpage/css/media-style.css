@@ -1,0 +1,34 @@
+ @media screen and (max-width: 991px) {
+    .nav-toggles{
+        display: block ;
+        margin: 20px;
+        color: var(--primary-text-color);
+    }
+    .nav-links{
+        display: none;
+    }
+    .companies-logos{
+        justify-content: space-evenly;
+    }
+
+    .big-feature{
+    flex-direction: row;
+
+    }
+    .big-feature-description{
+        font-size: large;
+        justify-content: center;
+    }
+    .example-img{
+        width: calc(50% - 10px);
+        height: 180px;
+
+    }
+    .example-imgs{
+        gap: 10px;
+    }
+    .cta-section-container button{
+        width: 100%;
+    }
+
+ }
