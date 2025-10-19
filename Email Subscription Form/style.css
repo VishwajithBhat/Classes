@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sb3JmdWx8ZW58MHx8MHx8fDA%3D&w=1000&q=80');    background-size: cover;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    
+}
+
+.container{
+    width: 600px;
+    padding: 30px;;
+    position: absolute;
+    font-size:x-large;
+    left: 10%;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    color: white;
+
+}
+
+.container p{
+    font-size: medium;
+    color: #dddddd;
+}
+
+input[type="email"]{
+    padding: 15px;
+    width: 300px;
+    font-size: medium;
+    border: none;
+    outline: none;
+}
+button{
+    width: 70px;
+    height: 48px;
+    transform: translate(-15%);
+    border: none;
+    background: #108603;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+}
+
+span{
+    margin-top: 10px;
+    color: #108603;
+    font-size: medium;
+    font-weight: bold;
+}
