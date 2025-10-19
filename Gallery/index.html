@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/02b4212f8e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="gallery-wrap">
+        <img src="media/back.png" id="backBtn">
+        <div class="gallery">
+            <div >
+                <span><img src="media/image-1.png" ></span>
+                <span><img src="media/image-2.png" ></span>
+                <span><img src="media/image-3.png" ></span>
+            </div>
+            <div >
+                <span><img src="media/image-4.png"></span>
+                <span><img src="media/image-5.png"></span>
+                <span><img src="media/image-6.png"></span>
+            </div>
+        </div>
+        <img src="media/next.png" id="nextBtn">
+    </div>
+    <script>
+        const gallery = document.querySelector('.gallery');
+        const nextBtn = document.getElementById('nextBtn');
+        const backBtn = document.getElementById('backBtn');
+
+        nextBtn.addEventListener('click', () => {
+            gallery.scrollBy({ left: 900, behavior: 'smooth' });
+        });
+
+        backBtn.addEventListener('click', () => {
+            gallery.scrollBy({ left: -900, behavior: 'smooth' });
+        });
+
+        gallery.addEventListener('wheel', (evt) => {
+            evt.preventDefault();
+            gallery.scrollBy({ left: evt.deltaY < 0 ? -300 : 300 });
+            gallery.style.scrollBehavior = 'smooth';
+        });
+            
+        
+    </script>
+
+</body>
+</html>
